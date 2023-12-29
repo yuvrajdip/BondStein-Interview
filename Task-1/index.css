@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: papayawhip;
+}
+
+.navbar{
+  background: rgb(216, 215, 215);
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.navbar-list{
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar>ul>li{
+  margin-right: 20px;
+  font-size: larger;
+}
+
+ 
+#dropDown-menu{
+  display: none;
+}
+
+.dropDown-Button{
+  display: none;
+  background: tomato;
+  color: white;
+  font-weight: bold;
+  margin: 8px;
+  padding: 8px 12px;
+  border:none;
+}
+
+
+@media screen and (width<=425px){
+  .navbar{
+    flex-direction: column;
+  }
+
+  .navbar-list{
+    display: none;
+  }
+
+  #dropDown-menu{
+    display: block;
+  }
+
+  .dropDown-Button{
+    display: block;
+    align-self: flex-start;
+  }
+  
+  .dropDown-list{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: center;
+    
+  }
+
+  .dropDown-list> li{
+    margin-top: 10px;
+    padding: 5px;
+    border-bottom: 1px solid black;
+  }
+}
